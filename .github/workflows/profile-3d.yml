@@ -13,11 +13,11 @@ jobs:
       - uses: actions/checkout@v3
         with:
           repository: vitosdeveloper/vitosdeveloper-readmemd
-          token: ${{ secrets.PUSH_TOKEN }}
+          token: ${{ secrets.TOKEN }}
 
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.PUSH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: vitosdeveloper
           SETTING_JSON: conf/github-profile-3d-contrib.json
 
